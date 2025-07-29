@@ -11,7 +11,6 @@ export default function AddTodoForm({onSubmit}: addTodoFormProps) {
     e.preventDefault();
     if (!input.trim()) return;
     onSubmit(input);
-    setInput("");
   }
   return(
     <form className="flex" onSubmit={handleSubmit}>
